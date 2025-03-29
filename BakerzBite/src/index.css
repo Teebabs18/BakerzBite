@@ -1,0 +1,1253 @@
+*{
+    margin:0px 0px;
+    padding: 0px ;
+    box-sizing: border-box;
+}
+body{
+    margin:10px 0px;
+    overflow-x: hidden;
+}
+
+
+
+
+/*NEW STYLING FOR MAPPED IMAGES*/
+
+.cake-card{
+    width: 250px;
+    height:290px;
+    border-radius: 15px;
+    background-color: #dcdcdc4f; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    position: relative;
+    left:20%;
+}
+.cake-card .cake-details{
+    position: relative;
+    right:17%;
+    width: 300px;
+}
+
+.bakery-page{
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    grid-template-rows: 250px auto;
+    gap:100px 20px;
+    padding:0px;
+}
+
+.cake-details h6{
+    padding: 5px;
+    position: relative;
+    opacity:70%;
+}
+
+.cake-details{
+    color:#D47A33;
+    margin-right:5px;
+    text-align: center;
+}
+
+.cake-details h2{
+    font-family: "Akatab";
+    font-size:1.2em
+}
+
+
+.cake-details .add-cart{
+    position: relative;
+    left:1%
+}
+
+.cart{
+    background: none;
+    border: 2px solid #248e60;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 20px;
+    margin-left:20px
+}
+.cart:hover{
+    background-color: #e87a267d;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+#price{
+    font-size: 18px;
+    font-weight: bold;
+    color: #248e60;
+    font-family: "Abhaya Libre";
+    font-weight:bolder;
+    font-size:1.5em
+}
+
+#price-1{
+    font-size: 18px;
+    font-weight: bold;
+    color: #248e60;
+    font-family: "Abhaya Libre";
+    font-weight:bolder;
+    font-size:1.5em;
+    position: relative;
+    left:13%
+}
+.image{
+    width:260px;
+    padding-right:10px;
+    position: relative;
+    left:0%;
+    object-fit:contain;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cake-card:hover {
+    transition: all 0.5s ease-in-out;
+    cursor:pointer;
+}
+
+.header{
+    text-align: center;
+    padding-bottom:50px;
+    max-height:50px;
+    margin-bottom: 30px;
+    color: #5c4033;
+}
+
+.pastry-page{
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    grid-template-rows: 250px auto;
+    gap:100px 20px;
+    padding:0px;
+    
+}
+
+.img{
+    width:260px;
+    padding-right:10px;
+    position: relative;
+    right:0%;
+    object-fit:contain;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.header2{
+    text-align: center;
+    padding:20px 0px;
+    max-height:50px;
+    margin-top:70px;
+    margin-bottom: 50px;
+    color: #5c4033;
+}
+
+.pastry-details{
+    color:#D47A33;
+    margin-right:5px;
+    text-align: left;
+    width:300px;
+    position:relative;
+    left:10%   
+}
+
+.pastry-details h2{
+    font-size:1.2em;
+    font-family: "Akatab";
+    position: relative;
+    left:5%
+}
+
+.pastry-details h6{
+    padding-top: 3px;
+    position: relative;
+    opacity:70%;
+    left:10%
+}
+.pastry-details .add-cart{
+    position: relative;
+    right:8%
+}
+
+.header2 h5{
+    font-family: "Joan";
+    font-size: 2em;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.header h5{
+    font-family: "Joan";
+    font-size: 2em;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.header2 h6{
+    font-family: "Joan";
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size:0.7em;
+}
+
+.header h6{
+    font-family: "Joan";
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 0.7em;
+}
+
+
+.cart-1{
+    background: none;
+    border: 2px solid #248e60;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 20px;
+    position: relative;
+    left:20%
+}
+.cart-1:hover{
+    background-color: #e87a267d;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+/******** MODAL STYLING ***********/
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+  
+  
+.modal-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    left:10%;
+    background-color: #dcdcdc; 
+    position: relative;
+    left:-10%;
+    /* max-width:500px; */
+    /* min-width:300px; */
+    /* max-height:500px; */
+    padding:30px 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left:10%
+}
+  
+.modal-details h2 {
+    font-family: "Akatab";
+    font-weight: 700;
+    font-size: 20px;
+    color: #d2691e;
+    padding-left:20px
+}
+
+.modal-details p {
+    font-family: "Akatab";
+    font-size: 14px;
+    color: #666;
+    margin: 0px;
+    height:100px;
+}
+
+.modal-background{
+    display: flex;
+    max-width:50vw;
+    max-height:250px;
+    position: relative;
+}
+
+
+li{
+    position: relative;
+    right:20px;
+    font-size: 0.8em;
+    opacity: 60%;
+}
+
+.modal-img .cake-img{
+    width:auto;
+    height:250px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.modal-details button{
+    max-width:100px;
+    border-radius: 20px;
+    border:none;
+    padding:5px 5px;
+    display: inline;
+    font-weight: 400;
+    font-family: "Abhaya Libre";
+    font-size:0.9em;
+    background-color: #248e60;
+    color:white;
+    text-align: center;
+    border: 2px solid #248e60;
+}
+button:hover{
+    cursor: pointer;
+    background-color:white;
+    border:2px solid #248e60;
+    color:black;
+}
+.modal-details .head{
+    position: relative;
+    right:10%
+}
+
+.head h3{
+    position: relative;
+    left:100%;
+    bottom: 55%;
+}
+
+.head h3:hover{
+    cursor: pointer;
+}
+
+
+
+
+/****** CONTACT PAGE STYLING ******/
+
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+    height: 50vh;
+    /* Fills the top half of the screen */
+    background: #E29578;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    padding-top: 80px;
+    /* Increased padding */
+    overflow: hidden;
+    animation: fadeInUp 1s ease-out;
+    margin-top: 50px;
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 30px;
+}
+
+.contact-info h1 {
+    font-family: 'Italianno', cursive;
+    font-size: 60px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    animation: slideInLeft 1s ease-out;
+    position: relative;
+    top: -10px;
+    font-weight: 400;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.6;
+    animation: slideInLeft 1.2s ease-out;
+    font-family: "Joan";
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #D9D9D9;
+    transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: relative;
+    display: inline-block;
+}
+
+/* Animated Focus Effect for Text Fields */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #db6d50;
+    outline: none;
+    background: #ffffff;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0px 4px 10px rgba(219, 109, 80, 0.3);
+}
+
+/* Keeping Name & Email side by side */
+.form-row {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+/* Contact Form Button */
+.contact-form button {
+    padding: 12px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+    background: #F9C4B9;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background: #ffddd6;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/***** FOOTER STYLING*****/
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.footer {
+    background-color: #A8B5A2;
+    color: #333333;
+    padding: 40px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-brand {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.footer-brand h2 {
+    font-family: "Italianno";
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    background-color: #000;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #333;
+}
+
+.social-icon a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon img {
+    width: 22px;
+    height: 22px;
+    filter: invert(1);
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 1.4rem;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.footer-section a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.get-in-touch {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+
+
+
+
+/***** NAVBAR, HERO STYLING******/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;  
+    padding: 0px 5px;
+    z-index:20;
+    background-color: whitesmoke
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+    text-align: center;
+    font-family: "Joan";
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.navbar-links a {
+    color: #E07A5F;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    border-bottom: 2px solid #E07A5F;
+}
+.navbar-links a:active{
+    color:#5c4033;
+}
+
+.hero-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0px;
+    margin-bottom:px
+}
+
+.hero-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:0px;
+    padding-bottom:50px;
+    z-index: 10%;
+}
+
+
+.hero-text {
+    color: #5c4033;
+    text-align: left;
+    font-family: "Abhaya Libre";
+    max-width:500px;
+    margin-top:50px
+}
+
+.hero-image-container {
+    position: relative;
+    width: 450px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #a1948c;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    object-fit: contain;
+    left:15%;
+    bottom:10%
+}
+
+.cake-image {
+    height: 20%;
+    width: 20%;
+}
+
+.doughnut-image{
+    height: 20%;
+    width: 20%;
+}
+
+
+.cookies-image{
+    height: 20%;
+    width: 20%;
+}
+
+.cookie{
+    width: 130px;
+    position: absolute;
+    bottom: -90px;
+    right: -50px;
+}
+
+.donut{
+    width: 130px;
+    position: absolute;
+    bottom: -130px;
+    right: 80px;
+}
+
+.cake{
+    width: 130px;
+    position: absolute;
+    bottom: -90px;
+    right: 214px;
+}
+
+.logo{
+    width: 170px;
+    margin-top: 5px;
+}
+
+.hero-text #h1{
+    font-weight:bolder;
+    font-size: 3.2em;
+}
+
+.hero-text h2{
+    font-size:2em
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid #5c40337e;
+    position: fixed;
+    width:100%;
+    z-index: 50;
+    background-color: whitesmoke;
+}
+
+
+/******* MERCHANDISE STYLING********/
+
+.merch-img{
+    width:200px
+}
+.merch-card{
+    display: flex;
+    padding-left:20px;
+    justify-content: space-evenly;
+    padding-top:20px
+}
+
+.card2 img{
+    width:180px
+}
+
+.card4 img{
+    width:180px
+}
+.card3 img{
+    width:195px
+}
+.info{
+    border: 2px solid black;
+    width:80px;
+    position:relative;
+    bottom:75%;
+    opacity: 30%;
+    font-size: 0.9em;
+    background-color: #c7c3c3;
+    font-family: "Abhaya Libre";
+    border-radius: 2px;
+    color:#db1616;
+    font-weight: bold;
+
+}
+
+.merch-body p{
+    text-align: center;
+    font-family: "Joan";
+    font-weight: 400;
+    color: #E07A5F;
+}
+
+.bottom{
+    /* border: 1px solid black; */
+    position: relative;
+    bottom:10%;
+    padding:20px;
+    background-color: #dcdcdc; 
+    /* border-radius: 10px; */
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.merch-card button{
+    width: 200px;
+    font-family: "Joan";
+    opacity:30%
+}
+
+.about{
+    margin:60px 50px;
+    text-align: center;
+    color:#6D4C41;
+    font-family: "Abhaya Libre";
+    font-size: 1.1em;
+}
+
+.abt-head{
+    padding:10px 0px;
+    max-height:50px;
+    margin-top:70px;
+    color: #5c4033;
+    font-size:2em;
+    font-family: "Joan";
+    font-size: 2em;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+.map{
+    text-align: center;
+    margin: 20px 0px;
+}
+  
+iframe {
+    width: 100%;
+    height: 450px;
+}
+
+#map{
+    width: 100%;
+    height:100%;
+    position:relative;
+}
+
+.abt-body{
+    max-width:700px;
+    position: relative;
+    left:26%
+}
+
+.gallery-body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:10px 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:50px
+}
+.gallery-container{
+    max-width: 100vw
+}
+.gallery-img{
+    width:250px;
+    border-radius: 10px;
+}
+.gallery-img:hover{
+    scale: 1.1;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.visitor-count{
+    /* border: 2px solid #5c4033; */
+    padding: 3px 5px;
+    font-family: "Akatab";
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #D47A33;
+    position:relative;
+    top:5px;
+    left:35%;
+    font-size: 0.8em;
+}
+
+/* HAMBURGER MENU  */
+
+.hamburger{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    display: flex;
+    padding: 10px 20px;
+    background-color: #5c4033;
+    max-width:200px;
+    border-radius: 10px;
+    display: none;
+}
+
+
+.hamburger li {
+    text-align: center;
+    font-family: "Joan";
+    font-weight: 100;
+    padding-bottom: 5px;
+    margin: 5px
+}
+
+.hamburger a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0px 10px;
+    transition: background-color 0.3s ease;
+}
+.hamburger a:hover{
+    opacity:40%
+}
+
+.hamburger-menu{
+    display: none;
+}
+.logo{
+    display: flex;
+}
+
+/*********** RESPONSIVENESS **********/
+
+@media(max-width: 718px){
+    .cake-card{
+        position: relative;
+        left:7%
+    }
+    body{
+        margin:0px 10px;
+        padding: 0px 0px;
+        /* overflow-x: hidden; */
+    }
+    .bakery-page{
+        display: grid;
+        grid-template-columns:250px auto;
+        grid-template-rows: 250px 250px 250px 250px;
+        gap:70px 30px;
+        padding:0px;
+    }
+
+    .pastry-page{
+        display: grid;
+        grid-template-columns:250px auto;
+        grid-template-rows: 250px 250px 250px 250px;
+        gap:100px 20px;
+        padding:0px;
+    }
+
+    .header2{
+        padding:50px 0px;
+        max-height:50px;
+        margin: 50px 0px 20px 10px;
+    }
+
+    .header{
+        margin: 0px 0px 20px 10px;
+    }
+
+    .cake-card {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .modal-background {
+       display: flex;
+       flex-wrap: wrap;
+    }
+    .modal-background .modal-img .cake-img{
+       border-top-left-radius: 10px;
+       border-bottom-left-radius: 0px;
+       border-top-right-radius: 10px;
+       width:268px;
+       height: auto;
+       position: relative;
+       top:5px;
+    }
+
+    .modal-background .modal-details{
+        width:200px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+    .merch-card{
+        display: flex;
+        flex-wrap: wrap;
+        gap:20px
+    }
+
+    .about .abt-body{
+        max-width: 700px;
+        position: relative;
+        left:10px
+    }
+
+    
+}
+
+@media (max-width: 718px) {
+    .hero-container {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    .hero-text{
+        text-align: center;
+        max-width:200px;
+        font-size:0.8em;
+        margin-bottom: 60px;   
+    }
+    .navbar-links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 40px ;
+    
+    }
+    .hero-image-container{
+        position:relative;
+        right:10%
+    }
+    .navbar-links a{
+        font-size:15px;
+        padding:2px
+    }
+}
+
+@media (max-width: 718px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 5%;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+    }
+
+    .contact-info {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .contact-info h1 {
+        font-size: 48px;
+        top: 0;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+    .contact-form{
+        width:100%;
+    }
+}
+
+@media(max-width: 1280px ){
+    body{
+        overflow-x: hidden;
+    }
+    .hero-section {
+       max-width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 0px;
+        margin: 0px 40px
+    }
+
+    .hero-image-container {
+        position: relative;
+        width: 450px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right:9%
+    }
+
+    .bakery-page{
+        /* display: grid;
+        grid-template-columns:400px 400px;
+        grid-template-rows: 250px auto;
+        gap:100px 5px;
+        padding:0px; */
+        display: flex;
+        flex-wrap: wrap;
+        gap:50px 90px;
+        padding:0px
+    }
+
+
+    .pastry-page{
+        /* display: grid;
+        grid-template-columns:400px 400px ;
+        grid-template-rows: 250px auto;
+        gap:100px 5px;
+        padding:0px 90px; */
+        display: flex;
+        flex-wrap: wrap;
+        gap:50px 90px;
+        padding:0px
+    }
+
+    .merch-card{
+        display: flex;
+        flex-wrap: wrap;
+        gap:0px
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;  
+        padding: 0px 5px;
+        z-index:20;
+        background-color: whitesmoke;
+        /* flex-wrap: wrap; */
+        width:50px;
+    }
+
+    .visitor-count{
+        position: relative;
+        left:10%
+    }
+
+    .contact-container{
+        width:100%;
+    }
+
+    .contact-info {
+        padding-right: 0;
+        text-align: center;
+        position: relative;
+        right:7%;
+    }
+
+    .contact-form{
+        width:100%;
+        position: relative;
+        right:10%;
+    }
+
+    .about .abt-body{
+        max-width: 700px;
+        position: relative;
+        left:200px
+    }
+
+    .merch-card{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        right:5%
+    }
+
+    .gallery-body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap:10px 30px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom:50px;
+        position: relative;
+        right:2%
+    }
+}
+
+@media(max-width: 915px){
+    .navbar{
+        display: none;
+    }    
+
+    .hamburger-menu{
+        display: block;
+    }
+
+    .hamburger{
+        display: block;
+    }
+    .ham-icon{
+        position: relative;
+        left:100px;
+        top:5px
+    }
+    .logo-body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bakery-page{
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-rows: 250px auto;
+        gap:100px 5px;
+        padding:0px 100px;
+    }
+
+    .pastry-page{
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-rows: 250px auto;
+        gap:100px 5px;
+        padding:0px 100px;
+    }
+
+    .merch-body{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 10px;
+        align-items: center;
+    }
+   .merch-body .merch-card{
+    margin-left: 10px;
+   }
+
+    .contact-form{
+        margin:0px 30px
+    }
+
+    .about{
+        position: relative;
+        right:40%
+    }
+
+    .hero-image-container {
+        position: relative;
+        width: 450px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right:20%
+    }
+}
