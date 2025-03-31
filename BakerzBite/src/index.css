@@ -1194,6 +1194,7 @@ iframe {
 
     .hamburger{
         display: block;
+        position: relative;
     }
     .ham-icon{
         position: relative;
@@ -1206,20 +1207,26 @@ iframe {
         justify-content: center;
     }
 
+    .logo-body .header-logo{
+        position: relative;
+        right:20%;
+    }
+
     .bakery-page{
         display: grid;
-        grid-template-columns:auto;
+        grid-template-columns:auto auto;
         grid-template-rows: 250px auto;
-        gap:100px 5px;
-        padding:0px 100px;
+        gap:60px 20px;
+        padding:0px;
     }
 
     .pastry-page{
         display: grid;
-        grid-template-columns:auto;
+        grid-template-columns:auto auto;
         grid-template-rows: 250px auto;
-        gap:100px 5px;
-        padding:0px 100px;
+        gap:60px 20px;
+        padding:0px;
+        
     }
 
     .merch-body{
@@ -1243,11 +1250,39 @@ iframe {
 
     .hero-image-container {
         position: relative;
-        width: 450px;
+        width: 350px;
         height: 350px;
         display: flex;
         justify-content: center;
         align-items: center;
-        right:20%
+        right:10%
+    }
+
+    .hero-section {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0px;
+        margin-left:0px
+    }
+
+    .cake-card{
+        width: 200px;
+        height:290px;
+        border-radius: 15px;
+        background-color: #dcdcdc4f; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        position: relative;
+        /* left:20%; */
+    }
+
+    .cake-card .image{
+        width:220px
+    }
+
+    .cake-card .img{
+        width:210px
     }
 }
