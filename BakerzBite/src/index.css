@@ -1315,7 +1315,7 @@ iframe {
 
     .modal-background{
         display: flex;
-        max-width:81vw;
+        max-width:82vw;
         max-height:250px;
         position: relative;
         left:7%
