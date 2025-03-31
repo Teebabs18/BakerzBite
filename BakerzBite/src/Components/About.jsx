@@ -15,13 +15,9 @@ function About() {
                 Whether you are celebrating a special occasion or just treating yourself, we are here to make every moment a little sweeter. Visit us in-store or order online to experience the magic of fresh-baked goodness.  
             </p>
           </div>
-            
-        
-        
         
         </div>
         <Gallery/>
-        {/* <Map/> */}
     </>
     
   )

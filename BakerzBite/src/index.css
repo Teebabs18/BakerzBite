@@ -1194,17 +1194,25 @@ iframe {
 
     .hamburger{
         display: block;
-        position: relative;
     }
     .ham-icon{
         position: relative;
-        left:100px;
-        top:5px
+        top:5px;
+        left:20px
+    }
+    .logo{
+        position: relative;
+        left:10%
+    }
+
+    .logo-body .hamburger-menu .ham-icon{
+        position: relative;
+        left:50px
     }
     .logo-body{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .logo-body .header-logo{
@@ -1269,20 +1277,113 @@ iframe {
 
     .cake-card{
         width: 200px;
-        height:290px;
+        height:250px;
         border-radius: 15px;
         background-color: #dcdcdc4f; 
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         font-family: Arial, sans-serif;
         position: relative;
+        padding: 0px 2px;
+        margin:0px -10px 
         /* left:20%; */
     }
 
     .cake-card .image{
-        width:220px
+        width:200px
     }
 
     .cake-card .img{
         width:210px
     }
+
+    .modal .modal-background .modal-details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        background-color: #dcdcdc; 
+        position: relative;
+        left:-10%;
+        padding:30px 30px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        margin-left:10%;
+        width:50vw;
+    }
+
+    .modal-background{
+        display: flex;
+        max-width:72vw;
+        max-height:250px;
+        position: relative;
+        left:7%
+    }
+
+    .cake-details{
+        color:#D47A33;
+        margin-right:5px;
+        text-align: center;
+        position: relative;
+        left:-35%;
+    }
+
+    .cake-details h2{
+        font-family: "Akatab";
+        font-size:0.9em;
+        padding-left:10px
+    }
+
+    .cake-details .add-cart{
+        position: relative;
+        left:5%
+    }
+    .pastry-details h2{
+        font-family: "Akatab";
+        font-size:1em;
+        padding-left:10px
+    }
+
+    .pastry-details .add-cart{
+        position: relative;
+        right:15%
+    }
+
+    .about .abt-body{
+        max-width: 700px;
+        position: relative;
+        left:50%
+    }
+
+    .gallery-body{
+        display: grid;
+        grid-template-rows: auto ;
+        grid-template-columns: auto auto;
+        gap:10px 30px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom:50px
+    }
+    .gallery-img{
+        width:170px;
+        border-radius: 10px;
+    }
+
+    .merch-card{
+        display: grid;
+        padding-left:20px;
+        padding-top:20px;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        gap: 20px 5px;
+    }
+
+    .merch-body{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 10px;
+        align-items: center;
+        margin-left:15px
+    }
+    
 }

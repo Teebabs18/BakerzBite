@@ -7,9 +7,6 @@ function Gallery() {
                 <div key ={items.id} className="galler-items">
                     <img src={items.image} alt={items.alt} className="gallery-img"/>
 
-                    {/* <div>
-                        <p>{items.alt}</p>
-                    </div> */}
                 </div>
             ))}
 

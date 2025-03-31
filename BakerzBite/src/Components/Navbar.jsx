@@ -19,7 +19,7 @@ import { useState } from 'react';
                     <div className='visitor-count'>
                         visitors count: 1500
                     </div>  
-            </nav>
+                </nav>
 
 
 
