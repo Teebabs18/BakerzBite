@@ -8,7 +8,7 @@ const PastryCard = () => {
     <>
         <div className="header2">
               <h5>PASTRY</h5>
-              <h6>Some text goes here</h6>
+              <h6>Savor the crisp, buttery layers of our freshly baked pastries.</h6>
         </div>
   
         <div className="pastry-page">

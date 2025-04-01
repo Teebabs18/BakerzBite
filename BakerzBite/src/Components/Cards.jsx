@@ -11,7 +11,7 @@ const Cards = ({img, desc, price, name, onClick}) => {
                 <h6>{desc}</h6>
 
                 <div className="add-cart">
-                    <span id="price">#{price}</span>
+                    <span id="price">&#8358;{price}</span>
                     <button className="cart">🛒</button>
                 </div>
             </div>

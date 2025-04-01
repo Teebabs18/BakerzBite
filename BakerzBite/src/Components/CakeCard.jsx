@@ -11,7 +11,7 @@ const CakeCard = () => {
 
         <div className="header">
             <h5>CAKES</h5>
-            <h6>indulge in freshly baked goodness</h6>
+            <h6>Delight in the perfect blend of crisp, buttery layers and rich, flavorful fillings.</h6>
         </div>
 
         <div className="bakery-page">

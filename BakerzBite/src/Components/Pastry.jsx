@@ -11,7 +11,7 @@ const Pastry = ({img, desc, price, name, onClick}) => {
                   <h6>{desc}</h6>
   
                   <div className="add-cart">
-                      <span id="price-1">#{price}</span>
+                      <span id="price-1">&#8358;{price}</span>
                       <button className="cart-1">🛒</button>
                   </div>
               </div>

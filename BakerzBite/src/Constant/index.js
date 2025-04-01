@@ -38,7 +38,7 @@ export const cakes = [
     {
     name: "CREAM DELIGHT",
     price: 30000,
-    description: "Chocolate filled goodness",
+    description: "Cream filled goodness",
     image: cake1, 
     details: "A rich chocolate cake topped with creamy whipped frosting, perfect for chocolate lovers seeking a decadent treat."
     },
@@ -54,15 +54,15 @@ export const cakes = [
     {
     name: "DARK CHOCO BITE",
     price: 45000,
-    description: "Strawberry filled goodness",
+    description: "Chocolate filled goodness",
     image:cake3, 
     details: "  A deep, dark chocolate cake layered with velvety cocoa frosting, offering an intense chocolate experience for true chocolate lovers."
     },
 
     {
-    name: "CHOCOLATE & HAZELNUT",
+    name: "CHOCO HAZELNUT",
     price: 40000,
-    description: "Vanilla filled goodness",
+    description: "Hazlenut cocoa crunch ",
     image: cake4,
     details: "A moist chocolate cake infused with hazelnut essence, topped with a silky chocolate ganache for a nutty-chocolate delight."
     },
@@ -70,7 +70,7 @@ export const cakes = [
     {
         name: "FRUITY BLISS",
         price: 30000,
-        description: "Chocolate filled goodness",
+        description: "Fruit lovers party",
         image: cake5, 
         details: "A chocolate cake drizzled with creamy frosting and topped with fresh berries, blending rich cocoa with fruity sweetness."
     },
@@ -78,7 +78,7 @@ export const cakes = [
     {
         name: "HONEY CARAMEL",
         price: 50000,
-        description: "Lemon filled goodness",
+        description: "Sweet honey delight",
         image: cake6, 
         details: " A honey-infused cake with caramel drizzle and a crunchy topping, delivering a sweet and textured experience."
     },
@@ -86,7 +86,7 @@ export const cakes = [
     {
         name: "COCOA LOVERS",
         price: 45000,
-        description: "Strawberry filled goodness",
+        description: "Rich and dark, just like cocoa",
         image:cake7, 
         details: " A cake made speacialy for those who love the smell and, bitter taste of cocoa"
     },
@@ -94,7 +94,7 @@ export const cakes = [
     {
         name: "CHOCO FANTACY",
         price: 40000,
-        description: "Vanilla filled goodness",
+        description: "Chocolate is the word",
         image: cake8,
         details:" A vanilla cake with a luscious chocolate drip, offering a dreamy combination of creamy vanilla and rich chocolate." 
     },
@@ -106,7 +106,7 @@ export const pastry = [
         image: donut1,
         name: "CINNAMON SUGAR",
         price: 6000,
-        description:"Any decription",
+        description:"Classic with a twist",
         details: "A classic donut coated in a sweet cinnamon-sugar blend, offering a warm and comforting flavor in every bite."
     },
 
@@ -114,7 +114,7 @@ export const pastry = [
         image: donut2, 
         name: "POWEDERD DONUT",
         price: 5000,
-        description:"Any decription",
+        description:"Fluffy with powdered sugar",
         details:"A soft, fluffy donut with a light powdered sugar sprinkle, perfect for a simple yet satisfying treat."
     },
 
@@ -122,7 +122,7 @@ export const pastry = [
         image: donut3,
         name: "RASPBERRY JAM",
         price: 8000,
-        description: "Any decription",
+        description: "Tangy filled raspberry jam",
         details:"A fluffy donut filled with tangy raspberry jam, dusted with powdered sugar for a burst of sweetness."
     },
 
@@ -130,7 +130,7 @@ export const pastry = [
         image: donut4,
         name: "CHOCO GLAZED",
         price: 8000,
-        description:"Any decription",
+        description:"Classic glazed donut",
         details:"A rich donut dipped in smooth chocolate glaze, perfect for chocolate lovers craving a sweet indulgence."
     },
 
@@ -138,7 +138,7 @@ export const pastry = [
         image: pie1,
         name:"STRAWBERRY PIE",
         price: 25000,
-        description:"Any decription",
+        description:"Strawberry baked goodness",
         details: " A buttery pie filled with creamy custard and topped with fresh strawberries, offering a perfect balance of sweet and tart."
     },
 
@@ -146,7 +146,7 @@ export const pastry = [
         image: pie2,
         name: "MIXED-FRUIT PIE",
         price:15000,
-        description: "Any decription",
+        description: "Flavours of mixed fruits",
         details:" A delicate pie bursting with mixed berries, including blueberries and raspberries, for a vibrant and fruity treat."
     },
 
@@ -154,7 +154,7 @@ export const pastry = [
         image: pie3,
         name: "LEMON CREAM PIE",
         price: 10000,
-        description: "Any decription    ",
+        description: "Classic lemon cream pie",
         details: " A zesty lemon pie topped with fluffy meringue, offering a refreshing and tangy dessert with a light, airy finish."
     },
 
@@ -162,7 +162,7 @@ export const pastry = [
         image: pie4,
         name: "VEGGIE PIE",
         price: 10000,
-        description: "Any decription",
+        description: "For lovers of veggies",
         details:"A savory pie filled with spinach, cheese, and herbs, baked in a flaky crust for a hearty and flavorful bite"
     }
 ]
@@ -179,6 +179,5 @@ export const gallery = [
     { id: 8, image: potato, alt: 'Eclair' },
     { id: 9, image: choco, alt: 'Eclair' },
     { id: 10, image: pie, alt: 'Eclair' },
-    // { id: 6, image: cakeSlice, alt: 'Eclair' },
 ]
 
